@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-decoration: none;
+}
+body {
+    background: url('../images/bg-header-mobile.png') no-repeat;
+}
+h1, h2, h3 {
+    margin-bottom: 0.5rem;
+    color: hsl(210, 10%, 33%);
+}
+h1 {
+    margin-top: 3rem;
+}
+h2 {
+    font-size: xx-large;
+}
+h3 {
+    font-size: x-large;
+}
+p {
+    color: hsl(201, 11%, 66%);
+    font-size: 1.04rem;
+    line-height: 1.5;
+}
+header, section {
+    width: 20rem;
+    margin: 9rem auto;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    text-align: center;
+}
+:is(.computer, .clipboard) figure {
+    max-width: 50rem;
+}
+:is(.computer, .clipboard) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* buttons */
+.buttons {
+    margin: 2rem;
+}
+button {
+    width: 20rem;
+    padding: 0.8rem;
+    color: white;
+    border-radius: 2rem;
+
+    font-size: larger;
+} 
+.ios {
+    background-color: hsl(171, 66%, 44%);
+    border: 1px outset hsl(171, 66%, 44%);
+    box-shadow: 0 5px 20px -10px hsl(171, 66%, 44%);
+}
+.mac {
+    background-color: hsl(233, 100%, 69%);
+    border: 1px outset hsl(233, 100%, 69%);
+    box-shadow: 0 5px 20px -10px hsl(233, 100%, 69%);
+}
+button:hover {
+    cursor: pointer;
+}
+
+/* 1st section */
+.track figure {
+    margin: 3rem 0;
+}
+.snippets {
+    gap: 3rem;
+}
+
+/* 2nd section */
+.clipboard img {
+    margin-top: 4rem;
+}
+
+/* 3rd section */
+.tools {
+    margin-top: 3rem;
+}
+.tools img {
+    margin: 2rem 0;
+}
+.logos {
+    width: 30%;
+    margin-top: 9rem;
+    gap: 4rem;
+}
+
+/* nav */
+nav {
+    padding: 3rem 0;
+
+    background-color: hsla(202, 11%, 66%, 0.1);
+}
+nav figure {
+    width: 3rem;
+}
+nav figure img {
+    width: 100%;
+}
+a {
+    font-size: larger;
+    color: hsl(210, 10%, 33%);
+}
+a:hover {
+    color: hsl(171, 66%, 44%);
+}
+.anchors, .social-media {
+    width: 40%;
+}
+.anchors {
+    margin: 1rem 0;
+}
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-media img {
+    width: 1.5rem;
+}
+
+/* footer */
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    white-space: pre;
+}
+
+@media (min-width: 1000px) {
+    body {
+        background: url('../images/bg-header-desktop.png') no-repeat;
+    }
+    header, section {
+        width: 60%;
+    }
+    .flex-row {
+        flex-direction: row;
+        justify-content: center;
+    }
+    button {
+        width: fit-content;
+        padding: 1rem 2rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    /* 1st section */
+    .computer {
+        width: 100vw;
+        justify-content: left;
+    }
+    .computer figure {
+        margin-left: -2rem;
+    }
+    .snippets {
+        margin-left: 5rem;
+        width: 28%;
+        gap: 4rem;
+
+        text-align: left;
+    }
+    .snippets p {
+        font-size: 1.2rem;
+    }
+    /* 2nd section */
+    .clipboard img {
+        width: 70vw;
+        margin-top: 6rem;
+    }
+    /* 3rd section */
+    .workflow {
+        width: 80%;
+    }
+    .tools {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .tools p {
+        font-size: 1.1rem;
+    }
+    .logos {
+        margin: 10rem 0;
+    }
+    /* nav */
+    .nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .nav p {
+        font-size: 1rem;
+        line-height: 2;
+    }
+    .anchors {
+        display: block;
+        column-count: 3;
+        column-gap: 3rem;
+
+        text-align: left;
+    }
+    .social-media {
+        width: 8rem;
+    }
+    /* footer */
+    .attribution {
+        margin: 1rem;
+        white-space: normal;
+    }
+}
